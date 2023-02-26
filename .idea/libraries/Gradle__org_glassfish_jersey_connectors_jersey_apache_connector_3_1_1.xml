@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.glassfish.jersey.connectors:jersey-apache-connector:3.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.connectors/jersey-apache-connector/3.1.1/b1184b39ecfc660a46f03d37bf08bdff3fb52b94/jersey-apache-connector-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.connectors/jersey-apache-connector/3.1.1/fd523e20b90b78c97d70acdcb85ebe7a09563168/jersey-apache-connector-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
