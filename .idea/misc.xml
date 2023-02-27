@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/api-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/config-server" />
     <file type="web" url="file://$PROJECT_DIR$/service-discovery" />
+    <file type="web" url="file://$PROJECT_DIR$/truck-load-manager" />
     <file type="web" url="file://$PROJECT_DIR$/vehicle-manager" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="17" project-jdk-type="JavaSDK" />
