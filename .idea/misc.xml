@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/api-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/config-server" />
+    <file type="web" url="file://$PROJECT_DIR$/employer-manager" />
     <file type="web" url="file://$PROJECT_DIR$/service-discovery" />
     <file type="web" url="file://$PROJECT_DIR$/vehicle-manager" />
   </component>
