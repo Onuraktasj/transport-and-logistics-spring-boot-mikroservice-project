@@ -1,5 +1,5 @@
 # Transport and Logistics
-A Transport and Logistics Workspace Project with Spring Boot 3.1.0, JDK 17 & Gradle.
+A Transport and Logistics Workspace Project with Spring Boot 3.0.3, JDK 17 & Gradle.
 
 Services are developed in the following modules:
 * **Load Manager** - Load Manager Service in order to manage load related functionalities.
