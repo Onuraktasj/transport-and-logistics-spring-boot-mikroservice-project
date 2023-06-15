@@ -32,7 +32,7 @@ create table if not exists vehicle_type
     is_active boolean   default true
 );
 
-create table if not exists vehicle_manufecturer
+create table if not exists vehicle_manufacturer
 (
     id               uuid primary key default gen_random_uuid(),
     name             varchar(255),
@@ -50,6 +50,6 @@ create table if not exists vehicle_fuel_type
 create table if not exists vehicle_transmission
 (
     id               uuid primary key default gen_random_uuid(),
-    tranmission_type varchar(32),
+    transmission_type varchar(32),
     is_active        boolean default true
 );
