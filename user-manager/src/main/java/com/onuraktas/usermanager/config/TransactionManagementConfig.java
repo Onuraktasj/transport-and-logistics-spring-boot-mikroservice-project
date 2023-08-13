@@ -1,4 +1,4 @@
-package com.onuraktas.usermanager.spring.config;
+package com.onuraktas.usermanager.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;

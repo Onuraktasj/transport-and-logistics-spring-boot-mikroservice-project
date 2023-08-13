@@ -1,6 +1,6 @@
 package com.onuraktas.usermanager;
 
-import com.onuraktas.usermanager.spring.spring.UserManagerApplication;
+import com.onuraktas.usermanager.spring.UserManagerApplication;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
