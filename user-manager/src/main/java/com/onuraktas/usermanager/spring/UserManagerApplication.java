@@ -1,8 +1,8 @@
-package com.onuraktas.usermanager.spring.spring;
+package com.onuraktas.usermanager.spring;
 
-import com.onuraktas.usermanager.spring.config.CommonConfig;
-import com.onuraktas.usermanager.spring.config.TransactionManagementConfig;
-import com.onuraktas.usermanager.spring.config.WebConfig;
+import com.onuraktas.usermanager.config.CommonConfig;
+import com.onuraktas.usermanager.config.WebConfig;
+import com.onuraktas.usermanager.config.TransactionManagementConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
