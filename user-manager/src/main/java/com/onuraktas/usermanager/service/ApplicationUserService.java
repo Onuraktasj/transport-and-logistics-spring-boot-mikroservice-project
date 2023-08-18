@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ApplicationUserService {
 
-    ApplicationUserDto createVehicle(CreateUserRequest createUserRequest);
+    ApplicationUserDto createUser(CreateUserRequest createUserRequest);
 
 }
