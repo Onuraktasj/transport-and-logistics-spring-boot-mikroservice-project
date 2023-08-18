@@ -18,7 +18,7 @@ public class ApplicationUserServiceImpl implements ApplicationUserService {
     }
 
     @Override
-    public ApplicationUserDto createVehicle(CreateUserRequest createUserRequest) {
+    public ApplicationUserDto createUser(CreateUserRequest createUserRequest) {
         ApplicationUser applicationUser = ApplicationUserMapper.toEntityFromCreateApplicationUserDto(createUserRequest);
 
         return ApplicationUserMapper.toDto(applicationUserRepository.save(applicationUser));
