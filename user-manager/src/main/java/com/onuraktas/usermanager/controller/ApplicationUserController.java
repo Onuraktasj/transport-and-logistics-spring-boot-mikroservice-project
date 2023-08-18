@@ -21,6 +21,6 @@ public class ApplicationUserController {
 
     @PostMapping("/crate")
     public ResponseEntity<ApplicationUserDto> crateUser(@RequestBody CreateUserRequest createUserRequest){
-        return ResponseEntity.ok(applicationUserService.createVehicle(createUserRequest));
+        return ResponseEntity.ok(applicationUserService.createUser(createUserRequest));
     }
 }
