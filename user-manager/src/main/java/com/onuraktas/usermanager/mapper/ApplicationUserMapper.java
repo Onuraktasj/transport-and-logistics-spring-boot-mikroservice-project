@@ -4,6 +4,7 @@ import com.onuraktas.usermanager.dto.entity.ApplicationUserDto;
 import com.onuraktas.usermanager.dto.request.CreateUserRequest;
 import com.onuraktas.usermanager.entity.ApplicationUser;
 
+import java.util.List;
 import java.util.Objects;
 
 public class ApplicationUserMapper {
@@ -48,5 +49,11 @@ public class ApplicationUserMapper {
                 .websiteUrl(createUserRequest.getWebsiteUrl())
                 .build();
 
+  }
+
+  public static List<ApplicationUserDto> toDtoList(List<ApplicationUser> applicationUserList){
+        return applicationUserList.stream().parallel()
+                .map(ApplicationUserMapper::toDto)
+                .toList();
   }
 }

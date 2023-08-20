@@ -4,10 +4,9 @@ import com.onuraktas.usermanager.dto.entity.ApplicationUserDto;
 import com.onuraktas.usermanager.dto.request.CreateUserRequest;
 import com.onuraktas.usermanager.service.ApplicationUserService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -22,5 +21,10 @@ public class ApplicationUserController {
     @PostMapping("/crate")
     public ResponseEntity<ApplicationUserDto> crateUser(@RequestBody CreateUserRequest createUserRequest){
         return ResponseEntity.ok(applicationUserService.createUser(createUserRequest));
+    }
+
+    @GetMapping("/getAll")
+    public ResponseEntity<List<ApplicationUserDto>> getAllUser(){
+        return ResponseEntity.ok(applicationUserService.getAllUser());
     }
 }
