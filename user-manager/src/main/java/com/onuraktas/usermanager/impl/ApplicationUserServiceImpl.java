@@ -8,6 +8,8 @@ import com.onuraktas.usermanager.mapper.ApplicationUserMapper;
 import com.onuraktas.usermanager.repository.ApplicationUserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ApplicationUserServiceImpl implements ApplicationUserService {
 
@@ -23,4 +25,11 @@ public class ApplicationUserServiceImpl implements ApplicationUserService {
 
         return ApplicationUserMapper.toDto(applicationUserRepository.save(applicationUser));
     }
+
+    @Override
+    public List<ApplicationUserDto> getAllUser() {
+        return ApplicationUserMapper.toDtoList(applicationUserRepository.findAll());
+    }
+
+
 }
