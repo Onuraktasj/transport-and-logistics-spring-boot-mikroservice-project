@@ -10,14 +10,13 @@ import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
 import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.Objects;
 import java.util.UUID;
 
 @Service
 public class ApplicationUserServiceImpl implements ApplicationUserService {
 
     private final ApplicationUserRepository applicationUserRepository;
-
     public ApplicationUserServiceImpl(ApplicationUserRepository applicationUserRepository){
         this.applicationUserRepository = applicationUserRepository;
     }
@@ -37,6 +36,16 @@ public class ApplicationUserServiceImpl implements ApplicationUserService {
     @Override
     public ApplicationUserDto getUser(UUID id) {
         return ApplicationUserMapper.toDto(applicationUserRepository.findById(id).orElseThrow(()-> new NotFoundException("User not found")));
+    }
+
+    @Override
+    public ApplicationUserDto updateUser(UUID id, ApplicationUserDto applicationUserDto) {
+        if (!Objects.equals(id,ApplicationUserMapper.toEntity(applicationUserDto).getId()))
+            throw new IllegalArgumentException("Ids do not match");
+        if (!this.applicationUserRepository.existsById(id))
+            throw new NotFoundException("User Not Found");
+
+        return ApplicationUserMapper.toDto(applicationUserRepository.save(ApplicationUserMapper.toEntity(applicationUserDto)));
     }
 
 

@@ -33,4 +33,9 @@ public class ApplicationUserController {
     public ResponseEntity<ApplicationUserDto> getUser(@PathVariable (value = "id")UUID id){
         return ResponseEntity.ok(applicationUserService.getUser(id));
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<ApplicationUserDto> updateUser(@PathVariable (value = "id") UUID id, @RequestBody  ApplicationUserDto applicationUserDto){
+        return ResponseEntity.ok(applicationUserService.updateUser(id,applicationUserDto));
+    }
 }
