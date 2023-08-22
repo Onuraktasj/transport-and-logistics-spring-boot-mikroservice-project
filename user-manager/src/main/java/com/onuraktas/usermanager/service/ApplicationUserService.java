@@ -15,4 +15,6 @@ public interface ApplicationUserService {
 
     ApplicationUserDto getUser(UUID id);
 
+    ApplicationUserDto updateUser(UUID id,ApplicationUserDto applicationUserDto);
+
 }
