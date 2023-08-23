@@ -16,40 +16,25 @@ create table if not exists vehicle_model
     id               uuid primary key default gen_random_uuid(),
     model_name       varchar(255),
     type_id          uuid,
-    manufacturer_id  uuid,
     release_year     integer,
-    fuel_type        uuid,
     transmission     uuid,
     engine_power     integer,
-    is_active        boolean default true
+    brand            varchar(255)
 );
 
-create table if not exists vehicle_type
-(
-    id                  uuid primary key default gen_random_uuid(),
-    type                varchar(32),
-    description         text,
-    is_active boolean   default true
-);
+comment on table vehicle_model is 'Stores vehicle model information';
+comment on column vehicle_model.id is 'Unique identifier for the vehicle model. Type is uuid';
+comment on column vehicle_model.model_name is 'Model Name of the vehicle model. Type is varchar(255)';
+comment on column vehicle_model.type_id is 'Type Id of the vehicle model. Type is uuid';
+comment on column vehicle_model.release_year is 'Release Year of the vehicle model. Type is integer';
+comment on column vehicle_model.transmission is 'Transmission of the vehicle model. Type is uuid';
+comment on column vehicle_model.engine_power is 'Engine Power of the vehicle model. Type is integer';
+comment on column vehicle_model.brand is 'Brand of the vehicle model. Type is varchar(255)';
 
-create table if not exists vehicle_manufacturer
-(
-    id               uuid primary key default gen_random_uuid(),
-    name             varchar(255),
-    country          varchar(32),
-    is_active        boolean default true
-);
 
-create table if not exists vehicle_fuel_type
-(
-    id               uuid primary key default gen_random_uuid(),
-    fuel_type        varchar(32),
-    is_active        boolean default true
-);
 
-create table if not exists vehicle_transmission
-(
-    id               uuid primary key default gen_random_uuid(),
-    transmission_type varchar(32),
-    is_active        boolean default true
-);
+
+
+
+
+
