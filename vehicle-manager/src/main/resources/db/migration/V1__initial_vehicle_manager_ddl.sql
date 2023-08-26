@@ -15,9 +15,9 @@ create table if not exists vehicle_model
 (
     id               uuid primary key default gen_random_uuid(),
     model_name       varchar(255),
-    type_id          uuid,
     release_year     integer,
-    transmission     uuid,
+    transmission     varchar(255),
+    axle             varchar(255),
     engine_power     integer,
     brand            varchar(255)
 );
@@ -25,9 +25,8 @@ create table if not exists vehicle_model
 comment on table vehicle_model is 'Stores vehicle model information';
 comment on column vehicle_model.id is 'Unique identifier for the vehicle model. Type is uuid';
 comment on column vehicle_model.model_name is 'Model Name of the vehicle model. Type is varchar(255)';
-comment on column vehicle_model.type_id is 'Type Id of the vehicle model. Type is uuid';
 comment on column vehicle_model.release_year is 'Release Year of the vehicle model. Type is integer';
-comment on column vehicle_model.transmission is 'Transmission of the vehicle model. Type is uuid';
+comment on column vehicle_model.transmission is 'Transmission of the vehicle model. Type is varchar(255)';
 comment on column vehicle_model.engine_power is 'Engine Power of the vehicle model. Type is integer';
 comment on column vehicle_model.brand is 'Brand of the vehicle model. Type is varchar(255)';
 

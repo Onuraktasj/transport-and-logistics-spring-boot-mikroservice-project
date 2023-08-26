@@ -21,16 +21,16 @@ import java.util.UUID;
 public class VehicleModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
    private String modelName;
 
-   private UUID typeId;
-
    private Integer releaseYear;
    
-   private UUID transmission;
+   private String transmission;
+
+   private String  axle;
 
    private Integer enginePower;
 
