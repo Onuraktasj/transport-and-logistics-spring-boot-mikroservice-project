@@ -1,6 +1,7 @@
 Below you can find the names of the contributors to this project;
 
 - [Evren Tan][evren-tan-github]
+- [Oguzhan Caner][oguzhan-caner-github]
 - [Onur Aktaş][onur-aktas-github]
 
 
@@ -9,3 +10,5 @@ Below you can find the names of the contributors to this project;
 
 [evren-tan-github]: https://github.com/evrentan
 [onur-aktas-github]: https://github.com/Onuraktasj
+[oguzhan-caner-github]: https://github.com/oguzhancaner
+
